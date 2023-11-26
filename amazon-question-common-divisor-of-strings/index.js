@@ -1,5 +1,5 @@
 /*
-Greatest Common Divisor of Strings
+Greatest Common Divisor of Strings -https://www.youtube.com/watch?v=i5I_wrbUdzM&list=PLQpVsaqBj4RIJdYW6Y-iAswxCZeocfoRW&index=15
 
 For two strings s and t, we say "t divides s" if and only if s = t + ... + t (i.e., t is concatenated with itself one or more times).
 
@@ -41,10 +41,9 @@ const commonDivisor = (str1, str2) =>{
         //loop through 
         for(let length = smallest; length > 0; length--){
            if((str1.length % length ===0) && (str2.length % length === 0)){
-             console.log(str1.substring(0, length))
+             return str1.substring(0, length);
            }
         }
-        
    }
 }
 
