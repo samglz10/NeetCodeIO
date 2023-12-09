@@ -24,3 +24,20 @@ Constraints:
 0 <= n <= 37
 The answer is guaranteed to fit within a 32-bit integer, ie. answer <= 2^31 - 1.
  */
+
+//initialize an array with the first tribbonacci numbers
+
+const input = 25;
+const output= 1389537;
+const tribonacciNumber =(n)=>{
+    const trib = [0,1,1];
+    for(let i = 3; i <= n; i++){
+       trib[i] = trib[i- 1] + trib[i - 2]+ trib[i - 3];
+       trib.push(i);
+       
+    }
+    console.log(trib[n])
+}
+
+tribonacciNumber(input);
+

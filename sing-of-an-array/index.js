@@ -30,24 +30,25 @@ Constraints:
 -100 <= nums[i] <= 100
  */
 
-const nums = [-1,-2,-3,-4,3,2,1];
+const nums = [-1,-2,-3,-4,3,2,1,0,-1];
 const output= 1;
 
 const signOfTheProduct =(nums)=>{
-    let result = null;
-    for(let num of nums){
-        result += result * num;
-    }
+  const result = 1;
+    for( let i = 0; i < nums.length; i++){
+     result = result * nums[i];
+  
     if(result === 0){
-        console.log(0)
+        console.log('zero',0)
         return 0
     } if(result < 0){
-        console.log(-1)
+        console.log('negative'-1)
         return -1 
     } else {
-        console.log(1)
+        console.log('postive',1)
         return 1
     }
+}
 }
 
 signOfTheProduct(nums)
