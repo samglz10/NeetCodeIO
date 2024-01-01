@@ -34,3 +34,15 @@ const invertBinaryTree =(root)=>{
     return root
 }
 invertBinaryTree(root);
+
+
+type TNode = {
+    value: number;
+    left: TNode | null;
+    right: TNode | null;
+}
+
+declare const node: TNode;
+//binary trees hodl primarily a value and nodes. In a binary tree it can have a left and a right node.
+node.left.value;
+node.right.value;

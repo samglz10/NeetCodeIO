@@ -10,6 +10,7 @@ Example 1:
 Input: arr = [17,18,5,4,6,1]
 Output: [18,6,6,6,1,-1]
 Explanation: 
+
 - index 0 --> the greatest element to the right of index 0 is index 1 (18).
 - index 1 --> the greatest element to the right of index 1 is index 4 (6).
 - index 2 --> the greatest element to the right of index 2 is index 4 (6).
@@ -40,8 +41,8 @@ const greatestElement =(arr)=>{
         const currentNumber = arr[i];
         arr[i] = max;
         //static method returns the largest of the numbers given as input parameters
-        max = Math.max(max,currentNumber);
+        max = Math.max(max, currentNumber);
     }
-    console.log(arr)
+    console.log(arr);
 }
 greatestElement(input);

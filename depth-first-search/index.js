@@ -25,6 +25,52 @@ function DFSPreOrder(){
 }
 
 
-
-
 myTree.DFSPreOrder()
+
+type TNode = {
+    value: number;
+    left: TNode | null;
+    right: TNode | null;
+}
+
+function dfs(node: TNode) {
+    if(node.value){
+        console.log(node.value);
+    } 
+    if(node.left !== null){
+        dfs(node.left);
+    }
+    if(node.right !== null){
+        dfs(node.right);
+    }
+}
+
+const tree: TNode = {
+    value: 1,
+    left: {
+        value: 2,
+        left: {
+        value: 4,
+        left: null,
+        right: null
+        },
+        right: {
+        value: 5,
+        left: null,
+        right: null
+        }
+    },
+    right: {
+        value: 3,
+        left: {
+        value: 6,
+        left: null,
+        right: null
+        },
+        right: {
+        value: 7,
+        left: null,
+        right: null
+        }
+    }
+}
