@@ -26,13 +26,13 @@ Example 2:
 
 var findDifference = function(nums1, nums2) {
     //use a js set
-    nums1 = new Set(nums1)
-    nums2 = new Set(nums2)
+    nums1 = new Set(nums1);
+    nums2 = new Set(nums2);
 
     for (let number of nums1){
         if (nums2.has(number)) {
-            nums1.delete(number)
-            nums2.delete(number)
+            nums1.delete(number);
+            nums2.delete(number);
         }
     }
     

@@ -14,8 +14,8 @@ Output: [1,2,3]
 
 Example 2:
 
-Input: root = []
-Output: []
+Input: root = [];
+Output: [];
 Example 3:
 
 Input: root = [1]
@@ -31,9 +31,8 @@ var preorderTraversal = function(root) {
 
     const left = preorderTraversal(root.left);
     const right = preorderTraversal(root.right);
-    console.log(root, left, right);
 
-    return [root.val, ...left, ...right]
+    return [root.val, ...left, ...right];
 }
 
 preorderTraversal([1,null,2,3]);
