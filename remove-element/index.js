@@ -39,15 +39,15 @@ const outputNums = "[2,2,_,__]"; //as a string to avoid console error
 
 const tryDos =(nums, val)=>{
     let k = 0;
-    for(let i =0; i < nums.length; i++){
+    for(let i = 0; i < nums.length; i++){
         if(nums[i] !== val){
             nums[k]= nums[i];
-            k+=1;
+            k++;
         }
-        
-        return k;
     }
+    console.log(k)
 }
+
 
 tryDos(input, value);
 

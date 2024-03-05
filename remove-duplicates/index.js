@@ -27,9 +27,9 @@ const arr = [0,0,1,1,1,2,2,3,3,4];
 
 function removeDups(nums){
     let newSet = new Set(nums);
-    console.log(newSet);
+   // console.log(newSet);
     const array = [...newSet]
     console.log(array);
     
 }
-removeDups(arr)
+removeDups(arr);
